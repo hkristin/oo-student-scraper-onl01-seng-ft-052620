@@ -27,7 +27,7 @@ class Student
   end
 
   def self.all
-    
+    @@all
   end
   
   def self.create(name, location, profile_url)

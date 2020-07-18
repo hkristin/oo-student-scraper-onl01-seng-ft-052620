@@ -30,16 +30,5 @@ class Student
     @@all
   end
   
-  def self.create(name, location, profile_url)
-    new_student = Student.new(name, location, profile_url)
-    new_student.save
-    new_student
-  end
-  
-  def save
-    
-    
-    
-  end
 end
 

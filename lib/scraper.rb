@@ -5,6 +5,7 @@ class Scraper
 
   def self.scrape_index_page(index_url)
     index_page = Nokogiri::HTML(open(index_url))
+    students = []
     student_cards = @doc.css('.student-card'); 
     student_cards.each do |student_attributes|
       new_student = Student.create(
